@@ -1,3 +1,5 @@
+import './footer.css'; // CSS 파일을 import
+
 function ArrowIcon() {
   return (
     <svg
@@ -24,10 +26,10 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="/rss"
+            href="/flus"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
+            <p className="ml-2 h-7">FLUS</p>
           </a>
         </li>
         <li>
@@ -38,23 +40,16 @@ export default function Footer() {
             href="https://github.com/vercel/next.js"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://vercel.com/templates/next.js/portfolio-starter-kit"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">view source</p>
+            <p className="ml-2 h-7">????</p>
           </a>
         </li>
       </ul>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
+        {/* © {new Date().getFullYear()} 윈도우 이모지 "윈키 + ." */}
+        Today : {new Date().getFullYear()}년 {new Date().getMonth() + 1}월 {new Date().getDate()}일 🐈
+        <br/>
+        일정 : 2025년 2월 10일 ~ 3월 21일 (종료까지 {Math.ceil((new Date(2025, 2, 21).getTime() - Date.now()) / (1000 * 60 * 60 * 24))}일 남음)
+        <span className="moving-dino">🦖</span>
       </p>
     </footer>
   )

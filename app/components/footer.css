@@ -1,0 +1,12 @@
+/* footer.css */
+@keyframes moveDino {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .moving-dino {
+    display: inline-block;
+    animation: moveDino 0.5s infinite alternate ease-in-out;
+  }
+  

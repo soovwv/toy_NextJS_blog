@@ -53,14 +53,14 @@ export default function RootLayout({
         GeistMono.variable // GeistMono 폰트 적용
       )}
     >
-      <body className="antialiased max-w-6xl mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased max-w-5xl mx-4 mt-8 lg:mx-auto">
         {/* 페이지 본문 너비~~~~~~~~~~~~~
         max-w-xl
         이 클래스는 main 요소의 최대 너비를 xl로 제한합니다. 
         xl은 Tailwind CSS의 기본 설정에서 max-width: 36rem (576px)을 의미합니다.
         이 클래스는 화면 크기가 커지더라도 콘텐츠가 36rem(576px) 너비를 초과하지 않도록 설정합니다.
 
-        **** 종류 : max-w-2xl ~ max-w-6xl 로 너비 조정 가능~
+        (중요)**** 종류 : max-w-2xl ~ max-w-6xl 로 너비 조정 가능~
 
         lg:mx-auto
         이 클래스는 large 화면 크기(lg 이상)에서 mx-auto를 적용하여 좌우 여백을 자동으로 설정하고, 

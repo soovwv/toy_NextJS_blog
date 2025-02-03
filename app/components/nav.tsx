@@ -2,26 +2,24 @@ import Link from 'next/link'
 
 const navItems = {
   '/': {
-    name: '홈',
+    name: 'Home',
   },
-  '/blog': {
-    name: '세무사 소개',
+  '/subway': {
+    name: 'Subway',
+  },  
+  '/weather': {
+    name: 'Weather',
+  },
+  '/foodmenu': {
+    name: 'FoodMenu', //네이버말고 구글지도로 하자...
   },
   'https://naver.com': {
-    name: '주요업무',
-  },  
-  'https://naver.com/': {
-    name: '가격안내',
+    name: 'Map', //네이버말고 구글지도로 하자...
   },
-  'https://naver.com/1': {
-    name: '오시는길',
+  '/blog': {
+    name: '???',
   },
-  'https://naver.com/2': {
-    name: '블로그',
-  },
-  'https://naver.com/3': {
-    name: '게시판',
-  },
+
 }
 
 export function Navbar() {
